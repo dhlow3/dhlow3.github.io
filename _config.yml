@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
-#exclude: [README.md]
+include: ["_pages"]
+exclude: [README.md]
 github: [metadata]
