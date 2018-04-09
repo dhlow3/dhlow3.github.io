@@ -2,3 +2,12 @@ theme: jekyll-theme-cayman
 include: ["_pages"]
 exclude: [README.md]
 github: [metadata]
+timezone: America/Tijuana
+author: Daniel Lowery
+title: Daniel Lowery
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
