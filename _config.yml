@@ -1,5 +1,4 @@
 theme: jekyll-theme-cayman
-include: ["_pages"]
 exclude: [README.md]
 github: [metadata]
 timezone: America/Tijuana
