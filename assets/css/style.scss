@@ -20,6 +20,15 @@
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
+.icon-link {
+  height: 30px;
+  width: 30px;
+}
+
+.icon-link:hover {
+  opacity: 0.7;
+}
+
 #logo {
   width: 20%;
 }
