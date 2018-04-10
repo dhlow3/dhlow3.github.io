@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 .page-header {
-  padding: 0rem 3rem 0rem 3rem;
+  padding: .5rem 3rem .5rem 3rem;
 }
 
 .site-footer {
@@ -15,9 +15,15 @@
   text-align: center;
 }
 
-#logo {
-  width: 30%;
+.page-divider {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
+
+#logo {
+  width: 20%;
+}
+@media screen and (max-width: 42em) { #logo { width: 50%;} }
 
 #portrait {
   width: 50%;
