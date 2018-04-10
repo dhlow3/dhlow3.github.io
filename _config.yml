@@ -5,6 +5,8 @@ github: [metadata]
 timezone: America/Tijuana
 author: Daniel Lowery
 title: Daniel Lowery
+github_username: dhlow3
+linkedin_username: daniellowery3
 defaults:
   -
     scope:
