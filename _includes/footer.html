@@ -1,23 +1,20 @@
 <footer class="site-footer">
     {% if site.github_username %}
       <a href="https://github.com/{{ site.github_username }}" title="GitHub Profile">
-        <img class="icon-link" src="{{ site.baseurl }}/public/images/social-github.png" alt="GitHub Profile">
+        <img class="icon-link" src="{{ site.baseurl }}/assets/images/icons/social-github.png" alt="GitHub Profile">
       </a>
     {% endif %}
     {% if site.linkedin_username %}
       <a href="https://linkedin.com/in/{{ site.linkedin_username }}"  title="LinkedIn Profile">
-        <img class="icon-link" src="{{ site.baseurl }}/public/images/social-linkedin.png" alt="LinkedIn Profile">
+        <img class="icon-link" src="{{ site.baseurl }}/assets/images/icons/social-linkedin.png" alt="LinkedIn Profile">
       </a>
     {% endif %}
-    <a href="{{ site.baseurl }}/public/pdf/Daniel Lowery Resume.pdf" title="Resume">
-      <img class="icon-link" src="{{ site.baseurl }}/public/images/document-text.png" alt="Resume">
+    <a href="{{ site.baseurl }}/assets/pdf/Daniel Lowery Resume.pdf" title="Resume">
+      <img class="icon-link" src="{{ site.baseurl }}/assets/images/icons/document-text.png" alt="Resume">
     </a>
     <a href="https://public.tableau.com/profile/daniel.lowery#!/" title="Tableau Profile">
-      <img class="icon-link" src="{{ site.baseurl }}/public/images/social-tableau-transparent-black.png" alt="Tableau Profile">
+      <img class="icon-link" src="{{ site.baseurl }}/assets/images/icons/social-tableau-transparent-black.png" alt="Tableau Profile">
     </a>
     <br>
-  {% if site.github.is_project_page %}
-    <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-  {% endif %}
   <span class="site-footer-credits">This site was built using <a href="https://pages.github.com">GitHub Pages</a>.</span>
 </footer>
