@@ -1,4 +1,21 @@
 ---
+layout: "default"
 permalink: "/"
 ---
-<h2>IN PROGRESS</h2>
+  <div class="posts">
+    <ul class="posts-list">
+      {% for post in site.posts %}
+        <li>
+          <article>
+            <h1>
+              <a href="{{ post.url }}" class="posts-title">{{ post.title }}</a>
+            </h1>
+            <span class="date">{{ post.date | date_to_string }}</span>
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">...read more</a>
+          </article>
+        </li>
+        <hr>
+      {% endfor %}
+    </ul>
+  </div>

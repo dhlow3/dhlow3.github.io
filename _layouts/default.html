@@ -5,9 +5,7 @@
 {% include head.html %}
   <body>
     <section class="page-header">
-      <a href="/">
-		    <img id="logo" src="{{ site.baseurl }}/assets/images/logo.svg" alt="" />
-		  </a>
+		    <img id="logo" src="{{ site.baseurl }}/assets/images/logo.svg" alt="Initials Logo"/>
       <div class="page-divider"></div>
       <a class="btn" href="/">Home</a>
       <a class="btn" href="{{ site.baseurl }}/about">About</a>
@@ -21,6 +19,6 @@
     {% if jekyll.environment == 'production' %}
     {% include ga.html %}
     {% endif %}
+    {% include footer.html %}
   </body>
-  {% include footer.html %}
 </html>
