@@ -37,16 +37,15 @@ numbers in my visualizations to help with readability. The following function wi
 replace zeros and commas from large numbers with the appropriate number unit.
 
 ```python
-def _millify(x, pos=None):
+def _millify(n, pos=None):
     """Big number formatter."""
     units = ['', ' K', ' M', ' B', ' T']
-    n = float(x) if isinstance(x, float) is False else x
-    idx = max(0, min(len(units)-1,
-                     int(floor(0 if n == 0 else log10(abs(n))/3))))
-    if x > 1000000:
-        return '{:.1f}{}'.format(n / 10**(3 * idx), units[idx])
+    n = float(n)
+    i = max(0, min(len(units)-1, floor(0 if n == 0 else log10(abs(n))/3)))
+    if n > 1000000:
+        return '{:.1f}{}'.format(n / 10**(3 * i), units[i])
     else:
-        return '{:.0f}{}'.format(n / 10**(3 * idx), units[idx])
+        return '{:.0f}{}'.format(n / 10**(3 * i), units[i])
 ```
 
 ## Data

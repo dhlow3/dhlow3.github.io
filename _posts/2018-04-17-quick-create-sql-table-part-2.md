@@ -159,7 +159,7 @@ def process():
     if parse_args['n']:
         try:
             parse_args['n'] = int(parse_args['n'])
-        except ValueError as e:
+        except ValueError:
             app.errorBox('n_error', 'Invalid number of rows to parse')
             invalid = True
 
@@ -184,7 +184,7 @@ if not invalid:
     try:
         # Do file parsing
         text = parse_file(parse_args)
-    except Exception as e:
+    except Exception:
         app.stop()
         raise
 

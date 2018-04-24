@@ -137,7 +137,7 @@ try:
             if len(val) > attr[name]['len']:
                 attr[name] = {'ex': attr[name]['ex'], 'len': len(val)}
 
-except UnicodeDecodeError as e:
+except UnicodeDecodeError:
     # Highlight location of UnicodeDecodeError in exception message
     print('UnicodeDecodeError AT LINE {} OF DATA FILE'.format(
         currentline))
