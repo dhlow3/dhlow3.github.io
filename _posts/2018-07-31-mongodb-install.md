@@ -6,17 +6,6 @@ Data is stored in a format very similar to JSON. It has many great features like
 database distribution, MapReduce, and user-defined JavaScript functions.
 <!--sep-->
 
-## Source Data for Data System
-I will be installing MongoDB as a
-secondary production database for my end-to-end
-[data system]({% post_url 2018-07-26-introduction-to-building-a-data-system %}).
-
-<!--sep-->
-
-I have two primary reasons in mind for using both MySQL and MongoDB:
-1. I want data coming from more than one source
-1. I want to explore using both traditional and less-traditional data technologies
-
 ## Install
 Once again, I'll be using the instructions provided by [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04)
 to install MongoDB on my Ubuntu 18.04 workstation.

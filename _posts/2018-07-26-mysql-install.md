@@ -6,12 +6,6 @@ the go-to for many developers wanting to store information using relational
 databases. Data is queried using SQL, and it is an excellent candidate for
 read/write operations in OLTP. <!--sep-->
 
-## Source Data for Data System
-I feel like MySQL is the perfect place to start
-building my [data system]({% post_url 2018-07-26-introduction-to-building-a-data-system %}).
-For now, this will act as one of my production databases. I'll go ahead and load
-in some sample data as well.
-
 ## Install
 For my home workstation, I use Ubuntu (currently 18.04). Installing MySQL on
 Ubuntu is incredibly easy. I just followed the instructions put together by the
