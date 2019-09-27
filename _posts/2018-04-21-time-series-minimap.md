@@ -9,7 +9,7 @@ modern text editors and IDEs.
 
 In this post, we'll build the following mini-map visualization:
 
-![Image of final mini-map viz]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_13_0.png)
+![Image of final mini-map viz]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_13_0.png){: .chart-image }
 <!--sep-->
 
 # Setup
@@ -125,7 +125,7 @@ ax.yaxis.set_ticks_position('left')
 plt.show()
 ```
 
-![Image of 90 day line plot]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_11_0.png)
+![Image of 90 day line plot]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_11_0.png){: .chart-image }
 
 ## Line and Column Plot
 
@@ -187,7 +187,7 @@ plt.show()
 ```
 
 
-![Image of line and column plot]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_9_0.png)
+![Image of line and column plot]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_9_0.png){: .chart-image }
 
 ### Shading
 
@@ -225,7 +225,7 @@ ax1.legend(bbox_to_anchor=(0.5, 1.25),
 ```
 
 
-![Image of plot with red shading]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_12_0.png)
+![Image of plot with red shading]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_12_0.png){: .chart-image }
 
 ## Final Mini-map Plot
 
@@ -306,7 +306,7 @@ for _ in ax2.spines:
 plt.show()
 ```
 
-![Image of final mini-map viz]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_13_0.png)
+![Image of final mini-map viz]({{ site.baseurl }}/assets/images/posts/time-series-minimap/Lines%2C%20Columns%2C%20and%20Insets_13_0.png){: .chart-image }
 
 # Conclusion
 In this post, we built a visualization that imitates a mini-map you might find
