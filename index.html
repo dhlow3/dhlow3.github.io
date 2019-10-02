@@ -5,6 +5,19 @@ permalink: "/"
   <div class="posts">
     <ul class="posts-list">
       {% for post in site.posts %}
+      {% if post.external_url %}
+        <li>
+            <article>
+              <h1>
+                <a href="{{ post.external_url }}" class="posts-title">{{ post.title }}</a>
+              </h1>
+              <!-- <span class="date">{{ post.date | date_to_string }}</span> -->
+              {{ post.excerpt }}
+              <a href="{{ post.external_url }}">...go to site</a>
+            </article>
+          </li>
+          <hr>
+      {% else %}
         <li>
           <article>
             <h1>
@@ -16,6 +29,7 @@ permalink: "/"
           </article>
         </li>
         <hr>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>
