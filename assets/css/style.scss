@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+section {
+  margin: 0 0 0 0;
+}
+
+section #title {
+  margin: 0 0 2rem 0;
+}
+
 .page-header {
   padding: .5rem 3rem .5rem 3rem;
   background: #252525;
@@ -61,6 +69,18 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 0.75rem 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.7);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 .chart-image {
