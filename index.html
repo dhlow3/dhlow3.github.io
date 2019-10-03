@@ -3,33 +3,25 @@ layout: "default"
 permalink: "/"
 ---
   <div class="posts">
-    <ul class="posts-list">
-      {% for post in site.posts %}
-      {% if post.external_url %}
-        <li>
-            <article>
-              <h1>
-                <a href="{{ post.external_url }}" class="posts-title">{{ post.title }}</a>
-              </h1>
-              <!-- <span class="date">{{ post.date | date_to_string }}</span> -->
-              {{ post.excerpt }}
-              <a href="{{ post.external_url }}">...go to site</a>
-            </article>
-          </li>
-          <hr>
-      {% else %}
-        <li>
-          <article>
-            <h1>
-              <a href="{{ post.url }}" class="posts-title">{{ post.title }}</a>
-            </h1>
-            <!-- <span class="date">{{ post.date | date_to_string }}</span> -->
-            {{ post.excerpt }}
-            <a href="{{ post.url }}">...read more</a>
-          </article>
-        </li>
-        <hr>
-      {% endif %}
-      {% endfor %}
-    </ul>
+    {% for post in site.posts %}
+    {% if post.external_url %}
+      <article>
+        <h1>
+          <a href="{{ post.external_url }}" class="posts-title">{{ post.title }}</a>
+        </h1>
+        {{ post.excerpt }}
+        <a href="{{ post.external_url }}">...go to site</a>
+      </article>
+      <hr>
+    {% else %}
+      <article>
+        <h1>
+          <a href="{{ post.url }}" class="posts-title">{{ post.title }}</a>
+        </h1>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}">...read more</a>
+      </article>
+      <hr>
+    {% endif %}
+    {% endfor %}
   </div>
