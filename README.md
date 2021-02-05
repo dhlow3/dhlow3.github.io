@@ -2,7 +2,7 @@
 
 ## License
 
-The following directories and their contents are Copyright 2019 Daniel Lowery.
+The following directories and their contents are Copyright 2021 Daniel Lowery.
 You may not reuse anything therein without my permission:
 
 * \_posts/
